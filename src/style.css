@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #FFCE8E;
 }
 
 ul {
@@ -32,3 +33,29 @@ li a {
   color: #FFF;
   padding: 20px 20px;
 }
+
+
+
+
+/*///////////////////////////////////
+Team Page
+//////////////////////////////////*/
+
+.team {
+  display: block;
+  max-width: 150px;
+  margin: 10px 30px;
+  border-radius: 100%;
+  float: left;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
