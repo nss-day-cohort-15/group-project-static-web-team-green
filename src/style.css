@@ -41,7 +41,7 @@ li a {
 Team Page
 //////////////////////////////////*/
 
-.team {
+.teamPhoto {
   display: block;
   max-width: 150px;
   margin: 10px 30px;
@@ -49,11 +49,11 @@ Team Page
   float: left;
 }
 
-h2 {
+.teamTitle {
   text-align: center;
 }
 
-section {
+.teamSection {
   margin: auto;
   padding: 20px;
   width: 50%;
