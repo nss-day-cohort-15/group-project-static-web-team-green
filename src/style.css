@@ -49,11 +49,13 @@ Team Page
   float: left;
 }
 
-.teamTitle {
+.teamTitle,
+.missionTitle {
   text-align: center;
 }
 
-.teamSection {
+.teamSection,
+.missionSection {
   margin: auto;
   padding: 20px;
   width: 50%;
@@ -61,18 +63,19 @@ Team Page
   background: rgba(255,255,255,0.4)
 }
 
-.teamBody {
+.teamBody,
+.missionBody {
   background: linear-gradient(#FFCE8E, transparent 90%),
-  #FFCE8E url(images/forest.jpg) no-repeat center;
+  #FFCE8E url(images/forest.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*///////////////////////////////////
 Mission Page
 //////////////////////////////////*/
 
-.missionBody {
-  background: linear-gradient(#FFCE8E, transparent 90%),
-  #FFCE8E url(images/forest.jpg) no-repeat center;
-  background-size: cover;
+.missionSection {
+  font-size: 20px;
+  width: 40%;
 }
