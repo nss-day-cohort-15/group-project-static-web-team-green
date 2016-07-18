@@ -57,5 +57,13 @@ Team Page
   margin: auto;
   padding: 20px;
   width: 50%;
+  font-weight: bold;
+  background: rgba(255,255,255,0.4)
+}
+
+.teamBody {
+  background: linear-gradient(#FFCE8E, transparent 90%),
+  #FFCE8E url(images/forest.jpg) no-repeat center;
+  background-size: cover;
 }
 
