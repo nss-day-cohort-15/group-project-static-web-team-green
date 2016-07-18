@@ -1,5 +1,6 @@
+/* Global Styles */
 * {
-  box-sizing: border-box;
+  box-styling: border-box;
 }
 
 body {
@@ -7,7 +8,16 @@ body {
   margin: 0;
 }
 
-ul {
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Galada', cursive;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* NavBar Styles */
+.navBar ul {
   margin: 0;
   display: flex;
   justify-content: flex-end;
@@ -15,6 +25,8 @@ ul {
 }
 
  .navBar {
+   display: flex;
+   justify-content: flex-end;
    background: #4bbf6b;
    z-index: 100;
    position: fixed;
@@ -108,4 +120,121 @@ li a:hover {
   nav:hover ul{
     display: block;
   }
+}
+
+/* Partners Page Styles */
+
+.partner {
+  width: 40%;
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding: 1%;
+}
+
+.partner p {
+  height: 150px;
+}
+
+.left {
+  float: left;
+  margin: 1% 1.5% 1% 6%;
+}
+
+.right {
+  float: right;
+  margin: 1% 6% 1% 1.5%;
+}
+
+.partnerLogo {
+  display: block;
+  margin: 0 auto;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#ethicalElectric {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+#ethicalElectric ~ p {
+  height: 250px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+/* Footer Style */
+
+.contactLogo {
+  height: 20px;
+}
+
+.contactFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.contactFooter li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contactFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.contactFooter a:hover {
+  color: #4bbf6b;
+}
+
+.contactFooter p {
+  margin: 10px auto;
+}
+
+/* Contact Form Styles */
+
+.hidden {
+  visibility: hidden;
+}
+
+.formElement {
+  display: block;
+  margin: 0 auto;
+  line-height: 2.5em;
+  border: 1px solid #aaa;
+  font-size: 1em;
+}
+
+.form textarea {
+  margin-top: 20px;
+  border: 1px #ccc solid;
+  color: #aaa;
+  width: 300px;
+  min-height: 100px;
+  resize: none;
+}
+
+#submit {
+  margin-top: 10px;
+  background-color: #eee;
+  width: 75px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #4bbf6b;
+  color: white;
 }
