@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #FFCE8E;
 }
 
 ul {
@@ -31,4 +32,47 @@ li a {
   display: inline-block;
   color: #FFF;
   padding: 20px 20px;
+}
+
+
+
+
+/*///////////////////////////////////
+Team Page
+//////////////////////////////////*/
+
+.teamPhoto {
+  display: block;
+  max-width: 150px;
+  margin: 10px 30px;
+  border-radius: 100%;
+  float: left;
+}
+
+.teamTitle {
+  text-align: center;
+}
+
+.teamSection {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  font-weight: bold;
+  background: rgba(255,255,255,0.4)
+}
+
+.teamBody {
+  background: linear-gradient(#FFCE8E, transparent 90%),
+  #FFCE8E url(images/forest.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/*///////////////////////////////////
+Mission Page
+//////////////////////////////////*/
+
+.missionBody {
+  background: linear-gradient(#FFCE8E, transparent 90%),
+  #FFCE8E url(images/forest.jpg) no-repeat center;
+  background-size: cover;
 }
