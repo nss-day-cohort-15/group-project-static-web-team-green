@@ -12,6 +12,8 @@ body {
 }
 
  .navBar {
+   display: flex;
+   justify-content: flex-end;
    background: #4bbf6b;
    min-height: 150px;
  }
@@ -19,10 +21,6 @@ body {
 .navBar li {
     display: inline-block;
     list-style-type: none;
-}
-
-.navBar li:first-child {
-  margin-left: 50%;
 }
 
 .navBar li:last-child {
@@ -40,28 +38,31 @@ body {
 
 .partners {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Galada', cursive;
+  color: #333;
+  margin-bottom: 0;
 }
 
 .partner {
   width: 40%;
-  border: 2px solid black;
+  border: 1px solid #333;
+  border-radius: 2px;
   padding: 1%;
 }
 
 .partner p {
-  max-height: 100px;
+  height: 150px;
 }
 
 .left {
   float: left;
-  margin: 2% 1.5% 1% 6%;
+  margin: 1% 1.5% 1% 6%;
 }
 
 .right {
   float: right;
-  margin: 2% 6% 1% 1.5%;
+  margin: 1% 6% 1% 1.5%;
 }
 
 .partnerLogo {
@@ -76,10 +77,12 @@ body {
   margin: 0 auto;
   height: 100px;
   max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 65px;
 }
 
-#ethicalElectric > p {
-  min-height: 300px;
+#ethicalElectric ~ p {
+  height: 250px;
 }
 .clearfix:after {
      visibility: hidden;
@@ -88,5 +91,31 @@ body {
      content: " ";
      clear: both;
      height: 0;
-     }
+}
 
+/* Footer Style */
+
+.contactLogo {
+  height: 20px;
+}
+
+.contactFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.contactFooter li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contactFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.contactFooter a:hover {
+  color: #4bbf6b;
+}
