@@ -381,3 +381,31 @@ Mission Page
   background: rgba(255,255,255,0.5);
   font-weight: bold;
 }
+
+/* Clickable Images */
+
+.fullDiv {
+  position: absolute;
+  width: 100%;
+  top: 30vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 90;
+  overflow: hidden;
+}
+
+.clickImage {
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+
+
