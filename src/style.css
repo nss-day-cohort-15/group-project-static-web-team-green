@@ -338,13 +338,27 @@ h2.company {
   }
 }
 
-@media only screen and (max-width: 1024px){
+@media (max-width: 1024px){
   li a {
     padding: 20px 0;
   }
+
+  .hero h1 {
+    left: 0;
+    margin-top: 50px;
+  }
+
+  .img-title {
+    left: 20%;
+  }
+
+  .productTitle {
+    margin-top: 20%;
+  }
+
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
 
   .logoImg {
     display: none;
@@ -384,6 +398,23 @@ h2.company {
   .navBar nav:hover ul {
     display: block;
   }
+
+  .img-title, .hero h1 {
+    position: absolute;
+    top: 125px;
+  }
+
+  .hero h1 {
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+  }
+
+  .img-title {
+    left: 0;
+    width: 100%;
+  }
+
 }
 
 /*///////////////////////////////////
