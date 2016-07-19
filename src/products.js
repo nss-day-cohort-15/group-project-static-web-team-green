@@ -115,9 +115,6 @@ if (container) {
   for (i=0; i<names.length; i++) {
   container.innerHTML += "<div class='productCard'> <h2 class='productName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'> <strong> Price: </strong> " + prices[i] + "</p> </div>";
   }
-  // for (i=0; i<divArray.length; i++) {
-  //   divArray[i].className = "productCard";
-  // }
   var imageArray = document.getElementsByClassName("productImage");
   for (i=0; i<imageArray.length; i++) {
       imageArray[i].addEventListener('click', function(event){
