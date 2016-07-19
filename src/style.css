@@ -2,8 +2,10 @@
 * {
   box-styling: border-box;
 }
+
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 .title {
@@ -14,32 +16,95 @@ body {
   margin-bottom: 0;
 }
 
+article {
+  top: 55px;
+  position: relative;
+}
+
+
 /* NavBar Styles */
 .navBar ul {
-  margin: 0;
+  float: right;
 }
 
  .navBar {
    display: flex;
    justify-content: flex-end;
    background: #4bbf6b;
-   min-height: 150px;
+   z-index: 100;
+   position: fixed;
+   top: -.75%;
+   width: 100%;
+   border-bottom: 1px solid #5f5f5f;
  }
 
-.navBar li {
-    display: inline-block;
+nav {
+  width: 75%;
+}
+
+li {
+    text-align: center;
     list-style-type: none;
+    display: inline;
+    padding: 10px;
 }
 
-.navBar li:last-child {
-  margin-right: 10px;
-}
-
-.navBar li a {
+li a {
   text-decoration: none;
   display: inline-block;
   color: #FFF;
-  padding: 20px 20px;
+  padding: 20px 10px;
+}
+
+li a:hover {
+  color: #5f5f5f;
+}
+
+/*Navbar Logo & Name */
+
+h2.company {
+  display:inline;
+  font-family: 'Galada', cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin: 5px 5px -50px 5px;
+  text-shadow: -2px 0 #5b8826, 0 2px #5b8826, 2px 0 #5b8826, 0 -2px #5b8826;
+}
+
+.logoImg {
+  padding-left: 50px;
+  padding-top: 40px;
+  background: url("images/treeLogo.png") no-repeat center;
+  background-size: 87px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 2px #5b8826;
+}
+
+.logo a {
+  height: 100%;
+}
+
+.logo{
+ width: 30%;
+ margin-top: 15px;
+}
+
+.logo img {
+  width: 75px;
+  margin: 10px 5px;
+  border-radius: 25%;
+
+  margin-left: 5px;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+  margin-right: 10px;
+	background: #5f5f5f url(images/menu-icon.png) center;
 }
 
 /* Partners Page Styles */
@@ -105,6 +170,10 @@ body {
   margin-top: 2%;
 }
 
+.contactFooter ul {
+  text-align: center;
+}
+
 .contactFooter li {
   list-style-type: none;
   display: inline-block;
@@ -159,5 +228,52 @@ body {
   color: white;
 }
 
+/*Responsive Styling*/
 
+@media only screen and (max-width: 1024px){
+  li a {
+    padding: 20px 0;
+  }
+}
 
+@media only screen and (max-width: 768px){
+
+  .logoImg {
+    display: none;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .navBar nav ul, .navBar nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #444;
+    right: 10px;
+    top: 45px;
+    width: 25%;
+    border-radius: 1px 0 4px 4px;
+  }
+
+  .navBar li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  li a {
+    color: #4bbf6b;
+    padding: 5px 0;
+  }
+
+  .navBar nav:hover ul {
+    display: block;
+  }
+}
