@@ -6,6 +6,12 @@ var products = [
     image: "images/reusableBag.jpg"
   },
   {
+    name: "Tree-free Journal",
+    description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
+    price: "$11.76",
+    image: "images/journal.jpg"
+  },
+  {
     name: "Eco-Friendly Soap",
     description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
     price: "$4.21/bar",
@@ -22,12 +28,6 @@ var products = [
     description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
     price: "$5.21/box",
     image: "images/trashBag.jpg"
-  },
-  {
-    name: "Tree-free Journal",
-    description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
-    price: "$11.76",
-    image: "images/journal.jpg"
   },
   {
     name: "LED Bulbs",
@@ -76,13 +76,22 @@ var products = [
     description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
     price: "$27.86",
     image: "images/alternatives.jpg"
+  },
+  {
+    name: "Bamboo Skateboard",
+    description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
+    price: "$87.32",
+    image: "images/bambooSkate.jpeg"
+  },
+  {
+    name: "Organic Recycled Onesie",
+    description: "Jean shorts portland letterpress, tousled roof party gluten-free single-origin coffee. Next level kinfolk mixtape put a bird on it salvia dreamcatcher. Literally meditation godard food truck, keffiyeh schlitz intelligentsia shoreditch tousled artisan. Heirloom 3 wolf moon bushwick literally kinfolk, tilde pork belly gastropub pop-up austin gluten-free. Deep v skateboard heirloom, fap yuccie wolf cronut listicle narwhal. Umami narwhal fixie knausgaard next level before they sold out vegan. Meh health goth humblebrag, cliche hoodie 90's listicle brooklyn trust fund.",
+    price: "$23.00",
+    image: "images/onesie.jpeg"
   }
 ]
 
-console.log(products[0]);
-  var container = document.getElementById("productContainer");
-  console.log(container);
-
+// Function that creates an array of each field in the objects
 function getFields(input, field) {
     var output = [];
     for (var i=0; i < input.length ; ++i)
@@ -90,22 +99,30 @@ function getFields(input, field) {
     return output;
 }
 
+// Arrays that contain the names, images, descriptions, and prices for each product
 var names = getFields(products,"name");
 var descriptions = getFields(products, "description");
 var prices = getFields(products, "price");
 var images = getFields(products, "image");
+var container = document.getElementById("productContainer");
+var featuredContainer = document.getElementById("featuredProducts");
 
-console.log(names);
+
+// Loop for Products Page
 
 for (i=0; i<names.length; i++) {
-  container.innerHTML += "<div class='productCard'>"
-  container.innerHTML += "<h2 class='productName'>" + names[i] + "</h2>";
-  container.innerHTML += "<img src = '" + images[i]+ "'" + " class='productImage'>";
-  container.innerHTML += "<p class='productDescription'>" + descriptions[i] + "</p>";
-  container.innerHTML += "<p class='productPrice'>" + prices[i] + "</p>";
-  container.innerHTML += "</div>";
+  container.innerHTML += "<div class='productCard'> <h2 class='productName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'> <strong> Price: </strong> " + prices[i] + "</p> </div>";
 }
 
+//  Loop for featured products
+for (i=0; i<3; i++) {
+  featuredContainer.innerHTML += "<div class='featuredCard'>";
+  featuredContainer.innerHTML += "<h2 class='featuredName'>" + names[i] + "</h2>";
+  featuredContainer.innerHTML += "<img src = '" + images[i]+ "'" + " class='featuredImage'>";
+  featuredContainer.innerHTML += "<p class='featuredDescription'>" + descriptions[i] + "</p>";
+  featuredContainer.innerHTML += "<p class='featuredPrice'>" + prices[i] + "</p>";
+  featuredContainer.innerHTML += "</div>";
+}
 
 
 
