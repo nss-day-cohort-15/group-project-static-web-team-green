@@ -122,12 +122,18 @@ h2.company {
 /* Home Page Styles */
 /***********************************/
 
-.hero img {
-  width: 100%;
-  /*max-width: 1440px;*/
-  top: 88px;
-  position: relative;
-  opacity: .3;
+.hero {
+  background: url('images/green-background.png') no-repeat;
+  background-size: cover;
+  padding: 225px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.img-title, .hero h1 {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /***********************************/
