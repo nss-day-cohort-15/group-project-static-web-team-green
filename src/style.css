@@ -169,19 +169,21 @@ h2.company {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  background: rgba(255,255,255,0.7);
 }
 
 .contactFooter ul {
-  text-align: center;
-  background: rgba(255,255,255,0.4);
-  width: 50%;
-  margin: auto;
+  max-height: 100px;
+  display: fixed;
 }
 
 .contactFooter li {
   list-style-type: none;
   display: inline-block;
-  margin-right: 20px;
+}
+
+.contactFooter li:first-child {
+  margin-left: 10%;
 }
 
 .contactFooter a {
@@ -191,10 +193,6 @@ h2.company {
 
 .contactFooter a:hover {
   color: #4bbf6b;
-}
-
-.contactFooter p {
-  margin: 10px auto;
 }
 
 /* Contact Form Styles */
@@ -262,6 +260,10 @@ h2.company {
 .productPrice {
   margin-left: 15px;
   font-size: 1.25em;
+}
+
+.productTitle {
+  margin-top: 10%;
 }
 
 /* Responsive Styling */
