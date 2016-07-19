@@ -7,6 +7,7 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #FFCE8E;
   margin: 0;
+  padding-bottom: 120px;
 }
 
 .title {
@@ -169,21 +170,22 @@ h2.company {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  background: rgba(255,255,255,0.7);
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid black;
 }
 
 .contactFooter ul {
   max-height: 100px;
   display: fixed;
+  text-align: center;
 }
 
 .contactFooter li {
   list-style-type: none;
   display: inline-block;
-}
-
-.contactFooter li:first-child {
-  margin-left: 10%;
 }
 
 .contactFooter a {
