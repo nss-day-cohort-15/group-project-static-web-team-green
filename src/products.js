@@ -80,11 +80,8 @@ var products = [
 ]
 
 console.log(products[0]);
-// for (i=0; i<products.length; i++) {
-//   for (key in products) {
-//     document.getElementById("productContainer").innerHTML += key;
-//   }
-// }
+  var container = document.getElementById("productContainer");
+  console.log(container);
 
 function getFields(input, field) {
     var output = [];
@@ -97,24 +94,15 @@ var names = getFields(products,"name");
 var descriptions = getFields(products, "description");
 var prices = getFields(products, "price");
 var images = getFields(products, "image");
-var container = document.getElementById("productContainer");
-
-// function buildItem (key, tag) {
-//   for (i=0; i<key.length; i++) {
-//     container.innerHTML += "<" + tag+ ">" + key[i] + "</" +tag+ ">";
-//   }
-// }
-
-// buildItem (names, "h2");
-
-// for (i=0; i<names.length; i++) {
-//   // console.log(names[i]);
-//   document.getElementById("productContainer").innerHTML += "<div>"
-
-//   "<h2>" + names[i] + "</h2>";
-// }
 
 console.log(names);
+
+for (i=0; i<names.length; i++) {
+  container.innerHTML += "<h2 class='productName'>" + names[i] + "</h2>";
+  container.innerHTML += "<img src = '" + images[i]+ "'" + " class='productImage'>";
+  container.innerHTML += "<p class='productDescription'>" + descriptions[i] + "</p>";
+}
+
 
 
 
