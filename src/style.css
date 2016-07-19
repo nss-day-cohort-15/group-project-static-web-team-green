@@ -12,6 +12,7 @@ a {
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #FFCE8E;
   margin: 0;
 }
 
@@ -189,7 +190,9 @@ h2.company {
      height: 0;
 }
 
+/***********************************/
 /* Footer Style */
+/***********************************/
 
 .contactLogo {
   height: 20px;
@@ -199,16 +202,17 @@ h2.company {
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  background: rgba(255,255,255,0.7);
 }
 
 .contactFooter ul {
-  text-align: center;
+  max-height: 100px;
+  display: fixed;
 }
 
 .contactFooter li {
   list-style-type: none;
   display: inline-block;
-  margin-right: 20px;
 }
 
 .contactFooter a {
@@ -219,7 +223,6 @@ h2.company {
 .contactFooter a:hover {
   color: #4bbf6b;
 }
-
 .contactFooter p {
   margin: 10px auto;
 }
@@ -265,6 +268,69 @@ h2.company {
 /***********************************/
 /*Responsive Styling*/
 /***********************************/
+
+.productCard {
+  display: inline-block;
+  width: 30%;
+  margin: 1.4%;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.productImage {
+  height: 200px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.productName {
+  text-align: center;
+  height: 50px;
+}
+
+.productDescription {
+  text-align: justify;
+  padding: 15px;
+}
+
+.productPrice {
+  margin-left: 15px;
+  font-size: 1.25em;
+}
+
+.productTitle {
+  margin-top: 10%;
+}
+
+/***********************************/
+/*Responsive Styling*/
+/***********************************/
+
+@media (max-width: 1020px) {
+  .productName {
+    height: 75px;
+  }
+}
+
+@media (max-width: 770px) {
+  .productCard {
+    width: 45%;
+  }
+}
+
+@media (max-width: 540px) {
+  .productName {
+    height: 75px;
+  }
+}
+
+@media (max-width: 500px) {
+  .productCard {
+    width: 85%;
+    margin: 1.5% 7.4%;
+  }
+}
 
 @media only screen and (max-width: 1024px){
   li a {
@@ -312,4 +378,46 @@ h2.company {
   .navBar nav:hover ul {
     display: block;
   }
+}
+
+/*///////////////////////////////////
+Team Page
+//////////////////////////////////*/
+
+.teamPhoto {
+  display: block;
+  max-width: 150px;
+  margin: 10px 30px;
+  border-radius: 100%;
+  float: left;
+}
+
+.teamSection,
+.missionSection {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  font-weight: bold;
+  background: rgba(255,255,255,0.4)
+}
+
+.pageBody {
+  background: linear-gradient(#FFCE8E, transparent 90%),
+  #FFCE8E url(images/forest.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*///////////////////////////////////
+Mission Page
+//////////////////////////////////*/
+
+.missionSection {
+  font-size: 20px;
+  width: 50%;
+}
+
+.partner {
+  background: rgba(255,255,255,0.5);
+  font-weight: bold;
 }
