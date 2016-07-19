@@ -28,14 +28,14 @@
         <div class="formContainer">
           <form action=" " class="form">
             <label class="hidden" for="firstName"> First Name: </label>
-            <input type="text" name="firstName" id="firstName" placeHolder="First Name" class="formElement">
+            <input type="text" name="firstName" id="firstName" placeHolder="First Name" class="formElement" required>
             <label class="hidden" for="lastName"> Last Name: </label>
-            <input type="text" name="lastName" id="lastName" placeHolder="Last Name" class="formElement">
+            <input type="text" name="lastName" id="lastName" placeHolder="Last Name" class="formElement" required>
             <label class="hidden" for="email"> Email: </label>
-            <input type="email" name="email" id="email" placeHolder="Email" class="formElement">
+            <input type="email" name="email" id="email" placeHolder="Email" class="formElement" required>
             <label class="hidden" for="phone"> Phone: </label>
             <input type="text" name="phone" id="phone" placeHolder="Phone" class="formElement">
-            <textarea id="comments" name="comments" class="formElement"> Additional Comments</textarea>
+            <textarea id="comments" name="comments" class="formElement" required > What would you like to tell us? </textarea>
             <button type="submit" id="submit" class="formElement"> Submit </button>
           </form>
         </div>
@@ -54,7 +54,6 @@
             <li>
               <img src="images/twitterLogo.png" class="contactLogo"> <a href="https://twitter.com">@treeHugger</a>
             </li>
-            <p> &copy; TreeHugger</p>
           </ul>
         </nav>
       </footer>
