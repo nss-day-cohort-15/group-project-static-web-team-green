@@ -139,9 +139,7 @@ if (container) {
 if (featuredContainer) {
   for (i=0; i<3; i++) {
     // console.log(featuredContainer)
-    featuredContainer.innerHTML += "<div class='featuredCard'> <h2 class='featuredName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='featuredImage'> <p class='featuredDescription'>" + descriptions[i] + "</p> <p class='featuredPrice'>" + prices[i] + "</p> </div>";
+    featuredContainer.innerHTML += "<div class='productCard'> <h2 class='procustName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'>" + prices[i] + "</p> </div>";
   }
 }
-
-
 

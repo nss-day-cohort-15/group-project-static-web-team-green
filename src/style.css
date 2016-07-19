@@ -1,12 +1,20 @@
+/***********************************/
 /* Global Styles */
+/***********************************/
+
 * {
   box-styling: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   background-color: #FFCE8E;
   margin: 0;
+  padding-bottom: 120px;
 }
 
 .title {
@@ -22,8 +30,10 @@ article {
   position: relative;
 }
 
-
+/***********************************/
 /* NavBar Styles */
+/***********************************/
+
 .navBar ul {
   float: right;
 }
@@ -61,7 +71,9 @@ li a:hover {
   color: #5f5f5f;
 }
 
+/***********************************/
 /*Navbar Logo & Name */
+/***********************************/
 
 h2.company {
   display:inline;
@@ -108,7 +120,27 @@ h2.company {
 	background: #5f5f5f url(images/menu-icon.png) center;
 }
 
+/***********************************/
+/* Home Page Styles */
+/***********************************/
+
+.hero {
+  background: url('images/green-background.png') no-repeat;
+  background-size: cover;
+  padding: 225px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.img-title, .hero h1 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/***********************************/
 /* Partners Page Styles */
+/***********************************/
 
 .partner {
   width: 40%;
@@ -159,7 +191,9 @@ h2.company {
      height: 0;
 }
 
+/***********************************/
 /* Footer Style */
+/***********************************/
 
 .contactLogo {
   height: 20px;
@@ -169,21 +203,22 @@ h2.company {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  background: rgba(255,255,255,0.7);
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid black;
 }
 
 .contactFooter ul {
   max-height: 100px;
   display: fixed;
+  text-align: center;
 }
 
 .contactFooter li {
   list-style-type: none;
   display: inline-block;
-}
-
-.contactFooter li:first-child {
-  margin-left: 10%;
 }
 
 .contactFooter a {
@@ -194,8 +229,13 @@ h2.company {
 .contactFooter a:hover {
   color: #4bbf6b;
 }
+.contactFooter p {
+  margin: 10px auto;
+}
 
+/***********************************/
 /* Contact Form Styles */
+/***********************************/
 
 .hidden {
   visibility: hidden;
@@ -230,7 +270,10 @@ h2.company {
   color: white;
 }
 
-/* Products Styling */
+
+/***********************************/
+/*Responsive Styling*/
+/***********************************/
 
 .productCard {
   display: inline-block;
@@ -266,7 +309,10 @@ h2.company {
   margin-top: 10%;
 }
 
-/* Responsive Styling */
+/***********************************/
+/*Responsive Styling*/
+/***********************************/
+
 @media (max-width: 1020px) {
   .productName {
     height: 75px;
@@ -292,13 +338,27 @@ h2.company {
   }
 }
 
-@media only screen and (max-width: 1024px){
+@media (max-width: 1024px){
   li a {
     padding: 20px 0;
   }
+
+  .hero h1 {
+    left: 0;
+    margin-top: 50px;
+  }
+
+  .img-title {
+    left: 20%;
+  }
+
+  .productTitle {
+    margin-top: 20%;
+  }
+
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
 
   .logoImg {
     display: none;
@@ -338,6 +398,23 @@ h2.company {
   .navBar nav:hover ul {
     display: block;
   }
+
+  .img-title, .hero h1 {
+    position: absolute;
+    top: 125px;
+  }
+
+  .hero h1 {
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+  }
+
+  .img-title {
+    left: 0;
+    width: 100%;
+  }
+
 }
 
 /*///////////////////////////////////
@@ -406,6 +483,4 @@ Mission Page
 .overflow {
   overflow: hidden;
 }
-
-
 
