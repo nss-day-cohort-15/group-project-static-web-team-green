@@ -173,6 +173,9 @@ h2.company {
 
 .contactFooter ul {
   text-align: center;
+  background: rgba(255,255,255,0.4);
+  width: 50%;
+  margin: auto;
 }
 
 .contactFooter li {
@@ -181,7 +184,6 @@ h2.company {
   margin-right: 20px;
 }
 
-<<<<<<< HEAD
 .contactFooter a {
   text-decoration: none;
   color: black;
@@ -280,11 +282,6 @@ h2.company {
   }
 }
 
-=======
->>>>>>> cjd-mission-page
-
-
-
 /*///////////////////////////////////
 Team Page
 //////////////////////////////////*/
@@ -297,21 +294,8 @@ Team Page
   float: left;
 }
 
-<<<<<<< HEAD
-.teamTitle {
-  text-align: center;
-}
-
-.teamSection {
-=======
-.teamTitle,
-.missionTitle {
-  text-align: center;
-}
-
 .teamSection,
 .missionSection {
->>>>>>> cjd-mission-page
   margin: auto;
   padding: 20px;
   width: 50%;
@@ -319,16 +303,9 @@ Team Page
   background: rgba(255,255,255,0.4)
 }
 
-<<<<<<< HEAD
-.teamBody {
-  background: linear-gradient(#FFCE8E, transparent 90%),
-  #FFCE8E url(images/forest.jpg) no-repeat center;
-=======
-.teamBody,
-.missionBody {
+.pageBody {
   background: linear-gradient(#FFCE8E, transparent 90%),
   #FFCE8E url(images/forest.jpg) no-repeat;
->>>>>>> cjd-mission-page
   background-size: cover;
   background-attachment: fixed;
 }
@@ -340,4 +317,9 @@ Mission Page
 .missionSection {
   font-size: 20px;
   width: 50%;
+}
+
+.partner {
+  background: rgba(255,255,255,0.5);
+  font-weight: bold;
 }
