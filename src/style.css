@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #FFCE8E;
   margin: 0;
 }
 
@@ -172,6 +173,9 @@ h2.company {
 
 .contactFooter ul {
   text-align: center;
+  background: rgba(255,255,255,0.4);
+  width: 50%;
+  margin: auto;
 }
 
 .contactFooter li {
@@ -332,4 +336,46 @@ h2.company {
   .navBar nav:hover ul {
     display: block;
   }
+}
+
+/*///////////////////////////////////
+Team Page
+//////////////////////////////////*/
+
+.teamPhoto {
+  display: block;
+  max-width: 150px;
+  margin: 10px 30px;
+  border-radius: 100%;
+  float: left;
+}
+
+.teamSection,
+.missionSection {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  font-weight: bold;
+  background: rgba(255,255,255,0.4)
+}
+
+.pageBody {
+  background: linear-gradient(#FFCE8E, transparent 90%),
+  #FFCE8E url(images/forest.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*///////////////////////////////////
+Mission Page
+//////////////////////////////////*/
+
+.missionSection {
+  font-size: 20px;
+  width: 50%;
+}
+
+.partner {
+  background: rgba(255,255,255,0.5);
+  font-weight: bold;
 }
