@@ -1,6 +1,13 @@
+/***********************************/
 /* Global Styles */
+/***********************************/
+
 * {
   box-styling: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -21,8 +28,10 @@ article {
   position: relative;
 }
 
-
+/***********************************/
 /* NavBar Styles */
+/***********************************/
+
 .navBar ul {
   float: right;
 }
@@ -60,7 +69,9 @@ li a:hover {
   color: #5f5f5f;
 }
 
+/***********************************/
 /*Navbar Logo & Name */
+/***********************************/
 
 h2.company {
   display:inline;
@@ -107,7 +118,21 @@ h2.company {
 	background: #5f5f5f url(images/menu-icon.png) center;
 }
 
+/***********************************/
+/* Home Page Styles */
+/***********************************/
+
+.hero img {
+  width: 100%;
+  /*max-width: 1440px;*/
+  top: 88px;
+  position: relative;
+  opacity: .3;
+}
+
+/***********************************/
 /* Partners Page Styles */
+/***********************************/
 
 .partner {
   width: 40%;
@@ -193,7 +218,9 @@ h2.company {
   margin: 10px auto;
 }
 
+/***********************************/
 /* Contact Form Styles */
+/***********************************/
 
 .hidden {
   visibility: hidden;
@@ -228,7 +255,10 @@ h2.company {
   color: white;
 }
 
+
+/***********************************/
 /*Responsive Styling*/
+/***********************************/
 
 @media only screen and (max-width: 1024px){
   li a {
