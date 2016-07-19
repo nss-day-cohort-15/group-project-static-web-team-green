@@ -1,5 +1,6 @@
+/* Global Styles */
 * {
-  box-sizing: border-box;
+  box-styling: border-box;
 }
 
 body {
@@ -7,11 +8,23 @@ body {
   margin: 0;
 }
 
-ul {
-  margin: 0;
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Galada', cursive;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* NavBar Styles */
+.navBar ul {
+  float: right;
+  height: 0;
 }
 
  .navBar {
+   display: flex;
+   justify-content: flex-end;
    background: #4bbf6b;
    z-index: 100;
    position: fixed;
@@ -21,8 +34,7 @@ ul {
  }
 
 nav {
-  display: inline-block;
-  width: 70%;
+  width: 100%;
 }
 
 li {
@@ -44,12 +56,14 @@ li a:hover {
 }
 
 .logo{
- width: 20%;
  display: inline-block;
 }
 
 .logo img {
-  width: 30%;
+  width: 75px;
+  margin: 10px 5px;
+  border-radius: 25%;
+  margin-left: 5px;
 }
 
 #menu-icon {
@@ -61,7 +75,7 @@ li a:hover {
 }
 
 article {
-  top: 45px;
+  top: 55px;
   position: relative;
 }
 
