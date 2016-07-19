@@ -65,5 +65,14 @@ Team Page
   background: linear-gradient(#FFCE8E, transparent 90%),
   #FFCE8E url(images/forest.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
+/*///////////////////////////////////
+Mission Page
+//////////////////////////////////*/
+
+.missionSection {
+  font-size: 20px;
+  width: 50%;
+}
