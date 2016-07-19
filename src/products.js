@@ -98,9 +98,12 @@ var images = getFields(products, "image");
 console.log(names);
 
 for (i=0; i<names.length; i++) {
+  container.innerHTML += "<div class='productCard'>"
   container.innerHTML += "<h2 class='productName'>" + names[i] + "</h2>";
   container.innerHTML += "<img src = '" + images[i]+ "'" + " class='productImage'>";
   container.innerHTML += "<p class='productDescription'>" + descriptions[i] + "</p>";
+  container.innerHTML += "<p class='productPrice'>" + prices[i] + "</p>";
+  container.innerHTML += "</div>";
 }
 
 
