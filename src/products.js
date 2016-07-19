@@ -109,19 +109,18 @@ var featuredContainer = document.getElementById("featuredProducts");
 
 
 // Loop for Products Page
-
-for (i=0; i<names.length; i++) {
+if (container) {
+  for (i=0; i<names.length; i++) {
   container.innerHTML += "<div class='productCard'> <h2 class='productName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'> <strong> Price: </strong> " + prices[i] + "</p> </div>";
+  }
 }
 
 //  Loop for featured products
-for (i=0; i<3; i++) {
-  featuredContainer.innerHTML += "<div class='featuredCard'>";
-  featuredContainer.innerHTML += "<h2 class='featuredName'>" + names[i] + "</h2>";
-  featuredContainer.innerHTML += "<img src = '" + images[i]+ "'" + " class='featuredImage'>";
-  featuredContainer.innerHTML += "<p class='featuredDescription'>" + descriptions[i] + "</p>";
-  featuredContainer.innerHTML += "<p class='featuredPrice'>" + prices[i] + "</p>";
-  featuredContainer.innerHTML += "</div>";
+if (featuredContainer) {
+  for (i=0; i<3; i++) {
+    // console.log(featuredContainer)
+    featuredContainer.innerHTML += "<div class='featuredCard'> <h2 class='featuredName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='featuredImage'> <p class='featuredDescription'>" + descriptions[i] + "</p> <p class='featuredPrice'>" + prices[i] + "</p> </div>";
+  }
 }
 
 
