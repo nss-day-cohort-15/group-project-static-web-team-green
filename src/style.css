@@ -1,6 +1,13 @@
+/***********************************/
 /* Global Styles */
+/***********************************/
+
 * {
   box-styling: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -23,8 +30,10 @@ article {
   position: relative;
 }
 
-
+/***********************************/
 /* NavBar Styles */
+/***********************************/
+
 .navBar ul {
   float: right;
 }
@@ -62,7 +71,9 @@ li a:hover {
   color: #5f5f5f;
 }
 
+/***********************************/
 /*Navbar Logo & Name */
+/***********************************/
 
 h2.company {
   display:inline;
@@ -109,7 +120,27 @@ h2.company {
 	background: #5f5f5f url(images/menu-icon.png) center;
 }
 
+/***********************************/
+/* Home Page Styles */
+/***********************************/
+
+.hero {
+  background: url('images/green-background.png') no-repeat;
+  background-size: cover;
+  padding: 225px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.img-title, .hero h1 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/***********************************/
 /* Partners Page Styles */
+/***********************************/
 
 .partner {
   width: 40%;
@@ -160,7 +191,9 @@ h2.company {
      height: 0;
 }
 
+/***********************************/
 /* Footer Style */
+/***********************************/
 
 .contactLogo {
   height: 20px;
@@ -196,8 +229,13 @@ h2.company {
 .contactFooter a:hover {
   color: #4bbf6b;
 }
+.contactFooter p {
+  margin: 10px auto;
+}
 
+/***********************************/
 /* Contact Form Styles */
+/***********************************/
 
 .hidden {
   visibility: hidden;
@@ -232,7 +270,10 @@ h2.company {
   color: white;
 }
 
-/* Products Styling */
+
+/***********************************/
+/*Responsive Styling*/
+/***********************************/
 
 .productCard {
   display: inline-block;
@@ -268,7 +309,10 @@ h2.company {
   margin-top: 10%;
 }
 
-/* Responsive Styling */
+/***********************************/
+/*Responsive Styling*/
+/***********************************/
+
 @media (max-width: 1020px) {
   .productName {
     height: 75px;
