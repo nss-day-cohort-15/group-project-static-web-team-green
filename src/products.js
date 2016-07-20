@@ -143,7 +143,6 @@ if (featuredContainer) {
   }
 }
 
-<<<<<<< HEAD
 
 // SPA Modifications //
 
@@ -173,5 +172,4 @@ function showPage (id) {
     document.querySelector('#home').classList.remove('hidden')
   }
 }
-=======
->>>>>>> af0149a3dc1bd93dec03cac201207e180b3da13e
+
