@@ -237,8 +237,12 @@ h2.company {
 /* Contact Form Styles */
 /***********************************/
 
-.hidden {
+.visibility-hdn {
   visibility: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .formElement {
