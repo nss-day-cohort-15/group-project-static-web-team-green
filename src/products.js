@@ -145,6 +145,9 @@ if (featuredContainer) {
 
 
 // SPA Modifications //
+// SPA Modifications //
+
+
 
 console.log('Welcome to our website fellow developer!')
 
