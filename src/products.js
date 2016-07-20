@@ -104,7 +104,7 @@ if (container) {
       <h2 class="productName"> ${products[i].name} </h2>
       <img src = ${products[i].image} class='productImage'>
       <p class='productDescription'> ${products[i].description} </p>
-      <p class='productPrice'> <strong> Price: </strong>  ${products[i].prices} </p>
+      <p class='productPrice'> <strong> Price: </strong>  ${products[i].price} </p>
     </div>`
   }
 
@@ -135,7 +135,7 @@ if (featuredContainer) {
     // console.log(featuredContainer)
     featuredContainer.innerHTML +=
       `<div class='productCard'>
-        <h2 class='productName'> ${products[i].names} </h2>
+        <h2 class='productName'> ${products[i].name} </h2>
         <img src = ${products[i].image} class='productImage'>
         <p class='productDescription'> ${products[i].description} </p>
         <p class='productPrice'> ${products[i].price} </p>
