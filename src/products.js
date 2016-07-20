@@ -92,40 +92,58 @@ var products = [
 ]
 
 
-// Function that creates an array of each field in the objects
-function getFields(input, field) {
-    var output = [];
-    for (var i=0; i < input.length ; ++i)
-        output.push(input[i][field]);
-    return output;
-}
-
-// Arrays that contain the names, images, descriptions, and prices for each product
-var names = getFields(products,"name");
-var descriptions = getFields(products, "description");
-var prices = getFields(products, "price");
-var images = getFields(products, "image");
 var container = document.getElementById("productContainer");
 var featuredContainer = document.getElementById("featuredProducts");
 
 
 
-// Loop for Products Page
+//Loop for Products Page
 if (container) {
-  for (i=0; i<names.length; i++) {
-  container.innerHTML += "<div class='productCard'> <h2 class='productName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'> <strong> Price: </strong> " + prices[i] + "</p> </div>";
+  for (i=0; i<products.length; i++) {
+   container.innerHTML += `<div class="productCard">
+      <h2 class="productName"> ${products[i].name} </h2>
+      <img src = ${products[i].image} class='productImage'>
+      <p class='productDescription'> ${products[i].description} </p>
+      <p class='productPrice'> <strong> Price: </strong>  ${products[i].price} </p>
+    </div>`
+  }
+
+
+  var imageArray = document.getElementsByClassName("productImage");
+  for (i=0; i<imageArray.length; i++) {
+      imageArray[i].addEventListener('click', function(event){
+        console.log(event)
+        var parentDiv = event.target.parentElement;
+        var image = event.target;
+        var nextElement = event.target.nextElementSibling;
+        var prevElement = event.target.previousElementSibling;
+        parentDiv.classList.toggle('fullDiv');
+        parentDiv.classList.toggle('productCard');
+        image.classList.toggle("clickImage");
+        image.classList.toggle("productImage");
+        prevElement.classList.toggle('hidden');
+        prevElement.classList.toggle('productName');
+        nextElement.classList.toggle('hidden');
+        nextElement.classList.toggle('productDescription');
+    });
   }
 }
-
 
 //  Loop for featured products
 if (featuredContainer) {
   for (i=0; i<3; i++) {
     // console.log(featuredContainer)
-    featuredContainer.innerHTML += "<div class='productCard'> <h2 class='procustName'>" + names[i] + "</h2> <img src = '" + images[i]+ "'" + " class='productImage'> <p class='productDescription'>" + descriptions[i] + "</p> <p class='productPrice'>" + prices[i] + "</p> </div>";
+    featuredContainer.innerHTML +=
+      `<div class='productCard'>
+        <h2 class='productName'> ${products[i].name} </h2>
+        <img src = ${products[i].image} class='productImage'>
+        <p class='productDescription'> ${products[i].description} </p>
+        <p class='productPrice'> ${products[i].price} </p>
+        </div>`;
   }
 }
 
+<<<<<<< HEAD
 
 // SPA Modifications //
 
@@ -155,3 +173,5 @@ function showPage (id) {
     document.querySelector('#home').classList.remove('hidden')
   }
 }
+=======
+>>>>>>> af0149a3dc1bd93dec03cac201207e180b3da13e
